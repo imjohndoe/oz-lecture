@@ -1,0 +1,85 @@
+body {
+  max-width: 80vw;
+  text-align: center;
+  font-size: 1rem;
+}
+header {
+  padding: 2rem;
+  border-bottom: 0.2rem solid black;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+aside {
+  width: 25vw;
+  padding: 1.5rem;
+  margin: 2vw;
+}
+footer {
+  padding: 1.5rem;
+  border-top: 0.2rem;
+  text-align: center;
+}
+h1 {
+  font-size: 2.5rem;
+}
+section {
+  margin: 2vw;
+}
+aside {
+  font-size: 1em;
+}
+#posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.post {
+  padding: 1.5rem;
+  border: 0.2rem solid black;
+}
+
+/* 태블릿 (최대 1023px) */
+@media screen and (max-width: 1023px) {
+  body {
+    max-width: 90vw;
+  }
+  #posts {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    gap: auto;
+  }
+  aside {
+    width: 30vw;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* 모바일 (최대 767px) */
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  #posts {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 1rem;
+  }
+  nav ul {
+    display: block;
+    gap: 5rem;
+  }
+  aside {
+    width: 100%;
+    margin: 1rem;
+  }
+}
