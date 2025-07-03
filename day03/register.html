@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>User Registration</h1>
+        <p class="form-group">사용자 등록 페이지입니다</p>
+        <nav>
+          <ul>
+            <li><a href="#home">홈</a></li>
+            <li><a href="#register">등록</a></li>
+            <li><a href="#run">도망가기</a></li>
+          </ul>
+        </nav>
+        <img
+          src="/Users/admin/Documents/oz-lecture/day02/media/media1.png"
+          alt="고양이"
+          width="100"
+          height="100"
+        />
+        <h4>아래 서식을 모두 완성해 주세요.</h4>
+        <article>😉당신의 개인정보는 이제 제 것입니다.</article>
+      </header>
+      <hr />
+      <form id="registration-form" action="#" method="post">
+        <div>
+          <label for="username">이름:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="사용자 이름"
+          />
+        </div>
+
+        <div id="div-container1">
+          <label for="email">이메일:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="예)abcdef@gmail.com"
+          />
+          <p>이메일의 형식을 잊지 마세요.</p>
+        </div>
+
+        <div>
+          <label for="password">비밀번호:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="비밀번호"
+          />
+        </div>
+
+        <div>
+          <label for="birthdate">생년월일:</label>
+          <input
+            type="date"
+            id="birthdate"
+            name="birthdate"
+            placeholder="생년월일 입력"
+          />
+        </div>
+
+        <div>
+          <label for="age">나이:</label>
+          <input type="number" id="age" name="age" min="18" max="100" />
+        </div>
+
+        <div>
+          <label for="gender">성별:</label>
+          <input type="radio" id="gender" name="gender" value="male" /> male
+          <input type="radio" id="gender" name="gender" value="female" /> female
+          <input type="radio" id="gender" name="gender" value="other" />
+          other(?)
+        </div>
+
+        <div>
+          <label for="satisfied">만족도:</label>
+          <input type="range" id="satisfied" name="satisfied" min="0" max="5" />
+        </div>
+
+        <div>
+          <label for="interest">관심사(취미):</label>
+          <input type="checkbox" id="interest" name="interest" value="gaming" />
+          game
+          <input
+            type="checkbox"
+            id="interest"
+            name="interest"
+            value="fishing"
+          />
+          fishing
+          <input type="checkbox" id="interest" name="interest" value="hiking" />
+          hiking
+          <input
+            type="checkbox"
+            id="interest"
+            name="interest"
+            value="running"
+          />
+          running
+        </div>
+
+        <div>
+          <p>마음에 드는 관심국가를 골라주세요 (*중복선택 불가)</p>
+          <label for="nation">관심국가:</label>
+          <select id="select" name="nation" multiple>
+            <option value="USA">미국</option>
+            <option value="france">프랑스</option>
+            <option value="brazil">브라질</option>
+            <option value="india">인도</option>
+          </select>
+        </div>
+        <hr />
+        <div class="type-submit">
+          <button type="submit">제출하기(submit)</button>
+        </div>
+
+        <div>
+          <button type="reset">초기화(처음부터 다시 작성하기)</button>
+        </div>
+      </form>
+    </section>
+    <aside>
+      <h3>Registration Tips</h3>
+      <video
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        controls
+        width="300"
+      ></video>
+      <ul>
+        <li>비밀번호는 최소 8자 이상으로 설정하세요.</li>
+        <li>이메일 주소는 정확히 입력하세요.</li>
+        <li>아이디는 영문 또는 숫자로 시작해야 합니다.</li>
+      </ul>
+      <!-- JavaScript없이 <canvas>태그만 포함하여,실제로 화면에 나오지 않습니다 -->
+      <canvas width="300" height="150"> </canvas>
+    </aside>
+    <footer>© 2025 Your Website</footer>
+  </body>
+</html>

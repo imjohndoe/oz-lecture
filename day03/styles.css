@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  background-color: rgb(0, 255, 110);
+  font-family: sans-serif;
+}
+
+#registration-form {
+  max-width: 500px;
+  margin: 40px;
+}
+
+[type="text"] {
+  width: 13%;
+  border: 2px solid green;
+}
+
+[type="email"] {
+  width: 40%;
+  padding: 9px;
+  border: 2px solid blue;
+}
+
+[type="password"] {
+  width: 30%;
+  padding: auto;
+  border: 1px solid gray;
+}
+
+[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+[type="reset"] {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+#registration-form p {
+  padding: 5px;
+  font-size: 10px;
+  color: purple;
+}
+
+#div-container1 > p {
+  padding: 0px;
+  font-size: 10px;
+  color: green;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+select {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border: 1px solid red;
+}
+
+select:hover {
+  border-color: black;
+}
+
+#select > option:first-child {
+  font-weight: bold;
+}
+
+[type="submit"]:hover {
+  background-color: pink;
+}
+
+[type="reset"]:hover {
+  background-color: yellowgreen;
+}
+
+header > h1:first-child {
+  margin-top: 20px;
+  color: brown;
+  font-size: 40px;
+}
+
+h1::after {
+  content: "🐈‍⬛";
+  margin-left: 20px;
+}
+
+h1::before {
+  content: "🐈‍⬛";
+  margin-right: 20px;
+}
+
+.type-submit::after {
+  content: "* 는 필수 입력 표시 입니다..";
+  color: red;
+  height: 10px;
+  background: white;
+  margin-top: 10px;
+}
+
+label::after {
+    content:"*";
+    color: red;
+}
